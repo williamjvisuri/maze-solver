@@ -12,6 +12,7 @@ class Cell():
         self.__y1 = -1
         self.__y2 = -1
         self.__win = window
+        self.visited = False
 
     def draw(self, x1, y1, x2, y2):
         self.__x1 = x1
@@ -56,3 +57,6 @@ class Cell():
         if self.__win is None:
             return
         self.__win.draw_line(Line(Point(x1, y1), Point(x2, y2)), color)
+
+    def __repr__(self):
+        return f"{self.visited}"
