@@ -56,7 +56,7 @@ class Cell():
         y2 = (to_cell.__y1 + to_cell.__y2) / 2
         if self.__win is None:
             return
-        self.__win.draw_line(Line(Point(x1, y1), Point(x2, y2)), color)
+        self.__win.draw_line(Line(Point(x1, y1), Point(x2, y2)), color, 4)
 
     def __repr__(self):
         return f"{self.visited}"
