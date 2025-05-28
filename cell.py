@@ -47,9 +47,9 @@ class Cell():
             self.__win.draw_line(bottom_wall, "white")
 
     def draw_move(self, to_cell, undo=False):
-        color = "gray"
+        color = "red"
         if not undo:
-            color = "red"
+            color = "green"
         x1 = (self.__x1 + self.__x2) / 2
         y1 = (self.__y1 + self.__y2) / 2
         x2 = (to_cell.__x1 + to_cell.__x2) / 2
